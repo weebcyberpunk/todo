@@ -1,4 +1,4 @@
-int list_tasks(FILE *fp);
-int create_tasks(char task, FILE *fp);
-int delete_tasks(char task, FILE *fp);
+int list_tasks();
+int create_tasks(char task);
+int delete_tasks(char task);
 int todo_help();
