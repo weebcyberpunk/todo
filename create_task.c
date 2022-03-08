@@ -13,8 +13,9 @@ int create_task(char task[]) {
 	fp = open_todo_file("a");
 
 	for (int count = 0;; count++) {
-		if task[count] == '\n' {
-			fprintf(stdout, "Error: Task cannot contain line breaks.\n");
+		if (task[count] == EOF) break;
+		if (task[count] == '\n') {
+			fprintf(stderr, "Error: Task cannot contain line breaks.\n");
 			exit(1);
 		}
 	}
