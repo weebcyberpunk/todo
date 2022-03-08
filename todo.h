@@ -1,4 +1,4 @@
 int list_tasks();
-int create_tasks(char task);
-int delete_tasks(char task);
+int create_task(char task[]);
+int delete_tasks(char task[]);
 int todo_help();
