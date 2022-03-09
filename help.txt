@@ -1,0 +1,37 @@
+			TODO
+		the stupid todo list
+
+USAGE:
+
+	without args, list user tasks.
+
+	--create or -c <arg>	create a task <arg>.
+	
+	--delete or -d <arg> 	delete the task numbered <arg>.
+
+	--list or -l 		list all tasks on stdout.
+
+	any other pattern will show this help.
+
+
+EXAMPLES:
+
+	$ todo
+	> 1 - buy some beer
+	$ todo -d 1
+	$ todo
+	> you completed all your tasks! <3
+	$ todo -c 'write the kernel'
+	$ todo -c 'call tux'
+	$ todo -l
+	> 1 - write the kernel
+	> 2 - call tux
+
+
+
+Todo is licensed under the GNU GPLv3 and the source code is 
+avaiable at https://www.github.com/weebcyberpunk/todo
+
+This program comes with absolutely no warranty. See the GNU GPLv3 at
+https://www.gnu.org/licenses/gpl-3.0.html or the copy at the online
+repository of Todo for details.
