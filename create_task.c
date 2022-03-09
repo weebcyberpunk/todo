@@ -21,6 +21,8 @@ int create_task(char task[]) {
 	}
 
 	fprintf(fp, "%s\n", task);
+
+	fclose(fp);
 	
 	return(0);
 }

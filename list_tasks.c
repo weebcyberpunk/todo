@@ -36,6 +36,8 @@ int list_tasks() {
 	}
 
 	if (have_tasks == 0) printf("you completed all of your tasks! <3\n");
+
+	fclose(fp);
 	
 	return(0);
 }
