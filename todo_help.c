@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 
 /*
  * author GG weebcyberpunk@gmail.com
@@ -11,6 +12,7 @@ int todo_help() {
 	
 	FILE *fp;
 	fp = fopen("/usr/share/todo/help.txt", "r");
+	char c;
 
 	if (fp == NULL) {
 		fprintf(stdout, "cannot open help file in /usr/share/todo/help.txt\n");
