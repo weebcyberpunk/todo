@@ -5,7 +5,7 @@ FILE *open_todo_file(char mode[]);
 
 /*
  * author GG weebcyberpunk@gmail.com
- * version 0.0.0
+ * version 1.0.0
  * since Mar 08, 2022
  */
 int list_tasks() {
