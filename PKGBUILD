@@ -11,12 +11,12 @@ source=("git+$url")
 md5sums=('SKIP')
 
 build() {
-	cd "$pkgname"
+	cd "todo"
 	gcc *.c *.h -o todo
 }
 
 package() {
-	cd "$pkgname"
+	cd "todo"
 	install -Dm755 todo $pkgdir/usr/bin/todo
 	install -Dm644 "help.txt" $pkgdir/usr/share/$pkgname/"help.txt"
 }
