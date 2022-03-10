@@ -1,5 +1,5 @@
 # Maintainer: GG weebcyberpunk@gmail.com
-pkgname=todo
+pkgname=todo-stupid
 pkgver=1.0.0
 pkgrel=1
 pkgdesc="The stupid todo list"

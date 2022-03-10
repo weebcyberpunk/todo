@@ -11,7 +11,7 @@ int todo_help() {
 	// simply concatenate the help file to stdout
 	
 	FILE *fp;
-	fp = fopen("/usr/share/todo/help.txt", "r");
+	fp = fopen("/usr/share/todo-stupid/help.txt", "r");
 	char c;
 
 	if (fp == NULL) {
