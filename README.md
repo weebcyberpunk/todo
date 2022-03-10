@@ -4,7 +4,7 @@ Todo is - as the name suppose - a todo list. A simple and stupid todo list.
 
 # Install
 
-Arch Linux or Arch-based Linux distributions users can install Todo by copying the `PKGBUILD`, running `makepkg` and installing with `pacman -U`.
+Arch Linux or Arch-based Linux distributions users can install Todo by copying the `PKGBUILD`, running `makepkg` and installing with `sudo pacman -U`.
 
 # Use
 
