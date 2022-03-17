@@ -1,0 +1,47 @@
+.TH TODO 1 todo
+
+.SH NAME
+todo - the stupid todo list
+
+.SH SYNOPSIS
+.SY todo
+.OP \-\-create,\ \-c task
+.OP \-\-delete,\ \-d task\ number
+.OP \-\-list,\ \-l
+
+.SH DESCRIPTION
+Todo is a simple and stupid todo list.
+
+.SH USAGE
+Calling it without args will consider
+.B \-\-list.
+
+.TP
+.B \-\-list,\ \-l
+Lists out all your tasks.
+
+.TP
+.B \-\-create,\ \-c \fItask
+Creates a new task
+.IR task \fR.
+
+.TP
+.B \-\-delete,\ \-d \fItask\ number
+Deletes the task numbered
+.IR task\ number \fR.
+
+.SH EXAMPLES
+.EX
+
+$ todo
+> 1 - buy some beer
+$ todo -d 1
+$ todo
+> you completed all your tasks! <3
+$ todo -c 'write the kernel'
+$ todo -c 'call tux'
+$ todo -l
+> 1 - write the kernel
+> 2 - call tux
+
+.EE
