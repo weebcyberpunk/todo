@@ -13,8 +13,8 @@ FILE *open_todo_file(char mode[]) {
 
 	// error
 	if (fp == NULL) {
-		fprintf(stdout, "cannot open ~/.local/share/todo.txt\n");
-		fprintf(stdout, "maybe file is not created? try creating a task with --create, it should creates the file.\n");
+		fprintf(stderr, "cannot open ~/.local/share/todo.txt\n");
+		fprintf(stderr, "maybe file is not created? try creating a task with --create, it should creates the file.\n");
 		exit(1);
 
 	}
