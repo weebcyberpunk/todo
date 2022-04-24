@@ -12,9 +12,9 @@ int list_tasks() {
 
 	FILE *fp;
 	fp = open_todo_file("r");
-	int count = 1;
-	int print = 1;
-	int have_tasks = 0;
+	unsigned long count = 1;
+	unsigned long print = 1;
+	short have_tasks = 0;
 	char c;
 
 	for (;;) {
@@ -24,7 +24,7 @@ int list_tasks() {
 		if (have_tasks == 0) have_tasks = 1;
 
 		if (print == 1) {
-			printf("%i - ", count);
+			printf("%lu - ", count);
 			print = 0;
 			count++;
 

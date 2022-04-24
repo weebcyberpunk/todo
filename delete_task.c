@@ -13,8 +13,8 @@ int delete_task(char task[]) {
 	FILE *fp;
 	fp = open_todo_file("r");
 
-	int task_num = atoi(task);
-	int task_count = 1;
+	unsigned long task_num = atoi(task);
+	unsigned long task_count = 1;
 
 	// get file size
 	fseek(fp, 0, SEEK_END);
@@ -24,8 +24,8 @@ int delete_task(char task[]) {
 	// put file in buffer
 	char *buf_file;	
 	buf_file = malloc(todo_size);
-	int count = 0;
-	int task_exist = 0;
+	unsigned long count = 0;
+	short task_exist = 0;
 	char c;
 	for (;;) {
 		c = getc(fp);
