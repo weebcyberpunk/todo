@@ -1,5 +1,7 @@
 #include"todo.h"
 #include<string.h>
+#include<stdio.h>
+#define VERSION "1.0.3"
 
 /*
  * Copyright 2022 © GG
@@ -25,7 +27,7 @@
 
 /*
  * author GG weebcyberpunk@gmail.com
- * version 1.0.0
+ * version 1.0.3
  * since Mar 5, 2022
  */
 int main(int argv, char *argc[]) {
@@ -39,14 +41,21 @@ int main(int argv, char *argc[]) {
 			list_tasks();
 
 		} else if (!strcmp(argc[1], "--create") || !strcmp(argc[1], "-c")) {
-			create_task(argc[2]);
+			if (argv == 3)
+				create_task(argc[2]);
+			else fprintf(stderr, "Please define a task to create\n");
 		
 		} else if (!strcmp(argc[1], "--delete") || !strcmp(argc[1], "-d")) {
-			delete_task(argc[2]);
+			if (argv == 3)
+				delete_task(argc[2]);
+			else fprintf(stderr, "Please define a task to delete\n");
 
 		} else if (!strcmp(argc[1], "--help")) {
 			todo_help();
 		
+		} else if (!strcmp(argc[1], "--version")) {
+			printf("Todo stupid - version "VERSION"\n");
+
 		} else create_task(argc[1]);
 
 	}
