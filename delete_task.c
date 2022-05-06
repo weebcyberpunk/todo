@@ -65,7 +65,7 @@ int delete_task(char task[]) {
 	fclose(fp);
 
 	if (task_exist == 0) {
-		fprintf(stderr, "task not found.");
+		fprintf(stderr, "task not found.\n");
 		exit(1);
 
 	}

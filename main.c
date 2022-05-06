@@ -35,11 +35,19 @@ int main(int argv, char *argc[]) {
 
 	} else {
 		// eval args
-		if ((strcmp(argc[1], "--list") == 0) || (strcmp(argc[1], "-l") == 0)) list_tasks();
-		else if ((strcmp(argc[1], "--create") == 0) || (strcmp(argc[1], "-c") == 0)) create_task(argc[2]);
-		else if ((strcmp(argc[1], "--delete") == 0) || (strcmp(argc[1], "-d") == 0)) delete_task(argc[2]);
-		else if (strcmp(argc[1], "--help") == 0) todo_help();
-		else todo_help();
+		if (!strcmp(argc[1], "--list") || !strcmp(argc[1], "-l")) {
+			list_tasks();
+
+		} else if (!strcmp(argc[1], "--create") || !strcmp(argc[1], "-c")) {
+			create_task(argc[2]);
+		
+		} else if (!strcmp(argc[1], "--delete") || !strcmp(argc[1], "-d")) {
+			delete_task(argc[2]);
+
+		} else if (!strcmp(argc[1], "--help")) {
+			todo_help();
+		
+		} else create_task(argc[1]);
 
 	}
 	
