@@ -32,33 +32,33 @@
  */
 int main(int argv, char *argc[]) {
 
-	if (argv == 1) {
-		list_tasks();
+    if (argv == 1) {
+        list_tasks();
 
-	} else {
-		// eval args
-		if (!strcmp(argc[1], "--list") || !strcmp(argc[1], "-l")) {
-			list_tasks();
+    } else {
+        // eval args
+        if (!strcmp(argc[1], "--list") || !strcmp(argc[1], "-l")) {
+            list_tasks();
 
-		} else if (!strcmp(argc[1], "--create") || !strcmp(argc[1], "-c")) {
-			if (argv == 3)
-				create_task(argc[2]);
-			else fprintf(stderr, "Please define a task to create\n");
-		
-		} else if (!strcmp(argc[1], "--delete") || !strcmp(argc[1], "-d")) {
-			if (argv == 3)
-				delete_task(argc[2]);
-			else fprintf(stderr, "Please define a task to delete\n");
+        } else if (!strcmp(argc[1], "--create") || !strcmp(argc[1], "-c")) {
+            if (argv == 3)
+                create_task(argc[2]);
+            else fprintf(stderr, "Please define a task to create\n");
+        
+        } else if (!strcmp(argc[1], "--delete") || !strcmp(argc[1], "-d")) {
+            if (argv == 3)
+                delete_task(argc[2]);
+            else fprintf(stderr, "Please define a task to delete\n");
 
-		} else if (!strcmp(argc[1], "--help")) {
-			todo_help();
-		
-		} else if (!strcmp(argc[1], "--version")) {
-			printf("Todo stupid - version "VERSION"\n");
+        } else if (!strcmp(argc[1], "--help")) {
+            todo_help();
+        
+        } else if (!strcmp(argc[1], "--version")) {
+            printf("Todo stupid - version "VERSION"\n");
 
-		} else create_task(argc[1]);
+        } else create_task(argc[1]);
 
-	}
-	
-	return(0);
+    }
+    
+    return(0);
 }

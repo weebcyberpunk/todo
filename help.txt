@@ -1,31 +1,31 @@
-			TODO
-		the stupid todo list
+               TODO
+        the stupid todo list
 
 USAGE:
 
-	without args, list user tasks.
+    without args, list user tasks.
 
-	--create or -c <arg>	create a task <arg>.
-	
-	--delete or -d <arg> 	delete the task numbered <arg>.
+    --create or -c <arg>    create a task <arg>.
+    
+    --delete or -d <arg>    delete the task numbered <arg>.
 
-	--list or -l 		list all tasks on stdout.
+    --list or -l            list all tasks on stdout.
 
-	any other pattern will show this help.
+    any other pattern will show this help.
 
 
 EXAMPLES:
 
-	$ todo
-	> 1 - buy some beer
-	$ todo -d 1
-	$ todo
-	> you completed all your tasks! <3
-	$ todo -c 'write the kernel'
-	$ todo -c 'call tux'
-	$ todo -l
-	> 1 - write the kernel
-	> 2 - call tux
+    $ todo
+    > 1 - buy some beer
+    $ todo -d 1
+    $ todo
+    > you completed all your tasks! <3
+    $ todo -c 'write the kernel'
+    $ todo -c 'call tux'
+    $ todo -l
+    > 1 - write the kernel
+    > 2 - call tux
 
 
 
